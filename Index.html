@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Make a Website Using HTML/CSS</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body{
+          font-family: 'Poppins';
+          line-height: 1.7em;
+
+      }
+
+      a{
+          text-decoration: none;
+          color: #333;
+      }
+
+      .container{
+          max-width: 1100px;
+          margin:auto;
+      }
+
+      .lead{
+          font-size: 16px;
+          padding: 10px 10px;
+          text-align: justify;
+      }
+
+      .btn{
+          display: inline-block;
+          padding: 07px 16px;
+          background: rgb(38, 94, 222);;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          border-radius: 03px;
+          color:#fff;
+          transition: all 0.3;
+      }
+
+      .clr{
+          clear: both;
+      }
+
+      /* Close Utality Classes */
+
+      #navbar{
+          background: #3170ff;
+          overflow: auto;
+      }
+      #navbar a{
+        
+        color:#fff;
+      }
+
+      #navbar h1{
+          float: left;
+          padding-top: 20px;
+      }
+
+      #navbar ul{
+          list-style: none;
+          float: right;
+      }
+
+      #navbar ul li{
+          float: left;
+      }
+
+      #navbar ul li a{
+          display: block;
+          padding: 20px;
+          text-align: center;
+          transition: all 0.5s;
+      }
+
+      #navbar ul li a:hover,
+      #navbar ul li a.current{
+          background: #4397EA;
+          transition: all 0.5s;
+        color: #fff;
+      }
+
+      /* Showcase Area */
+    
+      /* Showcase Area */
+      #showcase{
+          background: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib') 
+            no-repeat
+                center center/cover;
+            
+                color: #fff;
+        height:350px;
+
+        margin: 5px;
+        padding: 5px
+      }
+        
+
+      .showcase-content{
+          padding-top: 40px;
+          color: #fff;
+      }
+
+      .showcase-content h2{
+         font-size: 40px;
+         line-height: 1.2em;
+        
+       }
+
+       .showcase-content p{
+          font-size: 20px;
+          margin-bottom: 20px;
+       }
+
+      img{
+        width:100%;
+        height:100%;
+        
+      }
+
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 16px;
+      }
+      .flex-container > div:hover{
+        background-color: #ddd;
+
+      }
+      .flex-container > div:active{
+        background-color: #ccc;
+
+      }
+
+      .flex-container h2{
+        color:#222;
+        fontsize:24px;
+        text-align:center;
+        padding:10px 10px;
+      }
+      .flex-container p{
+        color:blue;
+        font-size: 16px;
+        text-align:center;
+      }
+
+
+      
+
+      
+
+      
+       
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div class="container">
+          <h1><a href="#">HubTech</a></h1>
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Showcase Area -->
+        <div id="showcase">
+          <div class="container">
+            <div class="showcase-content">
+              <h2>The Hub of Technology</h2>
+
+            
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique delectus ut velit
+                ducimus quaerat quisquam, ex, suscipit deleniti illum consequatur omnis deserunt,
+                placeat facere quasi dolores cupiditate non error necessitatibus! Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div>
+      <img src="images/img10.jpg">
+    </div>
+
+    <div class="flex-container">
+      <div>
+        <h2>Learning HTML full Course</h2>
+        <h3>What is HTML?</h3>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="HTML Tutorial for Beginners: HTML Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <h2>CSS from Zero to Hero</h2>
+        <h3>What is CSS?</h3>
+        <ul>
+          <li>CSS stands for Cascading Style Sheets</li>
+          <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+          CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+          <li>External stylesheets are stored in CSS</li>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </ul>
+        
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="CSS Tutorial - Zero to Hero (Complete Course)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+      <div>
+        <h2>Learn Javascript</h2>
+        <h3>JavaScript Can Change HTML Content</h3>
+        <ul>
+          <li>JavaScript is the world's most popular programming language.
+</li>
+          <li> JavaScript is the programming language of the Web.</li>
+          <li>JavaScript is easy to learn.</li>
+          <li>This tutorial will teach you JavaScript from basic to advanced.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="Learn JavaScript - Full Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </body>
+</html>
